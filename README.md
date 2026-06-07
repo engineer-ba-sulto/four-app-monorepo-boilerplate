@@ -69,7 +69,7 @@ bun run dev:sp
 bun run dev:lp
 ```
 
-全 app を並列起動する場合:
+全 app を並列起動する場合（mprocs で pane 分割 UI）:
 
 ```bash
 bun run dev
@@ -83,20 +83,20 @@ bun run dev
 
 ## Scripts
 
-| Script               | Description                      |
-| -------------------- | -------------------------------- |
-| `bun run dev`        | 全 workspace の `dev` を並列実行 |
-| `bun run dev:api`    | API（Wrangler dev）              |
-| `bun run dev:web`    | Web（Vite）                      |
-| `bun run dev:sp`     | SP（Expo）                       |
-| `bun run dev:lp`     | LP（Astro dev）                  |
-| `bun run build`      | 全 workspace の `build`          |
-| `bun run typecheck`  | 全 workspace の型チェック        |
-| `bun run test`       | Bun test（ルート）               |
-| `bun run check`      | Biome check                      |
-| `bun run check:fix`  | Biome check + auto-fix           |
-| `bun run format`     | Biome format（dry-run）          |
-| `bun run format:fix` | Biome format + write             |
+| Script               | Description                          |
+| -------------------- | ------------------------------------ |
+| `bun run dev`        | mprocs で全 app を pane 分割 UI 起動 |
+| `bun run dev:api`    | API（Wrangler dev）                  |
+| `bun run dev:web`    | Web（Vite）                          |
+| `bun run dev:sp`     | SP（Expo）                           |
+| `bun run dev:lp`     | LP（Astro dev）                      |
+| `bun run build`      | 全 workspace の `build`              |
+| `bun run typecheck`  | 全 workspace の型チェック            |
+| `bun run test`       | Bun test（ルート）                   |
+| `bun run check`      | Biome check                          |
+| `bun run check:fix`  | Biome check + auto-fix               |
+| `bun run format`     | Biome format（dry-run）              |
+| `bun run format:fix` | Biome format + write                 |
 
 `dev:*` は `bun run --filter <app> dev` 形式。Bun 1.3 では `bun --cwd apps/<app> run dev` だと script が実行されないため、この形式に統一している。
 
