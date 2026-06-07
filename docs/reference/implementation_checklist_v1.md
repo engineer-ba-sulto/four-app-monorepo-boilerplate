@@ -18,6 +18,8 @@
 
 ## Phase 1: Root Workspace
 
+tsconfig / Biome の方針と Biome スキル参照は `tooling_tsconfig_biome_v1.md` に従う。
+
 - [ ] Create root `package.json` with Bun workspaces.
 - [ ] Add workspace package names under `@repo/*`.
 - [ ] Create root `biome.json`.

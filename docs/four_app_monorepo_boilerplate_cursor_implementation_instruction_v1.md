@@ -9,14 +9,17 @@
 
 ## 正本ドキュメント
 
-実装時は、次の4ファイルを正本として参照する（プロジェクト内 `docs/reference/` に配置）。
+実装時は、次の5ファイルを正本として参照する（プロジェクト内 `docs/reference/` に配置）。
 
 - `docs/reference/monorepo_boilerplate_spec_v1.md`
 - `docs/reference/directory_structure_v1.md`
 - `docs/reference/implementation_checklist_v1.md`
 - `docs/reference/app_scaffolding_v1.md`
+- `docs/reference/tooling_tsconfig_biome_v1.md`
 
-本指示書は、上記3ファイルをCursor実装用にまとめたもの。詳細判断で迷った場合は、正本ドキュメントを優先する。
+Biome 導入の手順は `.cursor/skills/bun-biome-setup/SKILL.md` を参照する（方針は `tooling_tsconfig_biome_v1.md` を優先）。
+
+本指示書は、上記をCursor実装用にまとめたもの。詳細判断で迷った場合は、正本ドキュメントを優先する。
 
 ## 実装ゴール
 
