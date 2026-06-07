@@ -10,7 +10,11 @@
   },
   "overrides": [
     {
-      "includes": ["apps/api/worker-configuration.d.ts"],
+      "includes": [
+        "apps/api/worker-configuration.d.ts",
+        "apps/web/worker-configuration.d.ts",
+        "apps/lp/worker-configuration.d.ts"
+      ],
       "linter": { "enabled": false },
       "formatter": { "enabled": false }
     }

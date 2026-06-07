@@ -70,7 +70,7 @@ four-app-monorepo-boilerplate の **Phase 1: Root Workspace** を実装する。
 | -------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `2026-06-07_2` | Phase 2: Shared Packages（`packages/config/tsconfig/*` 含む） | [2026-06-07_2_shared_packages.md](../../todo/2026-06-07_2_shared_packages.md) |
 | `2026-06-07_3` | Phase 3a: apps/api                                            | [2026-06-07_3_apps_api.md](../../todo/2026-06-07_3_apps_api.md)               |
-| `2026-06-07_4` | Phase 3b: apps/web + apps/lp                                  | [2026-06-07_4_apps_web_lp.md](../../todo/2026-06-07_4_apps_web_lp.md)         |
+| `2026-06-07_4` | Phase 3b: apps/web + apps/lp                                  | [2026-06-07_4_apps_web_lp.md](2026-06-07_4_apps_web_lp.md)                    |
 | `2026-06-07_5` | Phase 3c: apps/sp                                             | [2026-06-07_5_apps_sp.md](../../todo/2026-06-07_5_apps_sp.md)                 |
 
 ## 完了メモ

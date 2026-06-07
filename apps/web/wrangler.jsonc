@@ -1,0 +1,26 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "four-app-monorepo-boilerplate-web",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-06-07",
+  "assets": {
+    "not_found_handling": "single-page-application"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "APP_ENV": "development",
+    "PUBLIC_SITE_URL": "https://example.com",
+    "PUBLIC_APP_URL": "https://app.example.com",
+    "PUBLIC_API_URL": "http://localhost:8787",
+    "PUBLIC_APP_NAME": "My App",
+    "PUBLIC_SUPPORT_EMAIL": "support@example.com"
+  }
+}

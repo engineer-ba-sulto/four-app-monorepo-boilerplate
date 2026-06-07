@@ -1,0 +1,21 @@
+{
+  "compatibility_date": "2026-06-07",
+  "compatibility_flags": ["global_fetch_strictly_public"],
+  "name": "four-app-monorepo-boilerplate-lp",
+  "main": "@astrojs/cloudflare/entrypoints/server",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "APP_ENV": "development",
+    "PUBLIC_SITE_URL": "https://example.com",
+    "PUBLIC_APP_URL": "http://localhost:5173",
+    "PUBLIC_API_URL": "http://localhost:8787",
+    "PUBLIC_APP_NAME": "My App",
+    "PUBLIC_SUPPORT_EMAIL": "support@example.com"
+  }
+}
