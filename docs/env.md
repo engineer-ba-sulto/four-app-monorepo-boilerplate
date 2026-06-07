@@ -35,17 +35,28 @@ const env = parseCommonEnv({
 
 ### apps/web (Vite + Workers)
 
-- **Vite dev:** `apps/web/.env` に `PUBLIC_*`（Vite は `import.meta.env.PUBLIC_*` で公開）
+- **Vite dev / build:** モード別 env（`import.meta.env.PUBLIC_*` で公開）
 - **Workers:** `apps/web/wrangler.jsonc` の `vars` / `.dev.vars`
 
+| Mode        | Template                            | Copy to                     |
+| ----------- | ----------------------------------- | --------------------------- |
+| Development | `apps/web/.env.development.example` | `apps/web/.env.development` |
+| Production  | `apps/web/.env.production.example`  | `apps/web/.env.production`  |
+
 ```env
-# apps/web/.env.example（コピーして .env を作成）
-PUBLIC_API_URL=http://localhost:8787
+# apps/web/.env.development.example（開発）
 PUBLIC_APP_URL=http://localhost:5173
-PUBLIC_SITE_URL=https://example.com
-PUBLIC_APP_NAME=My App
-PUBLIC_SUPPORT_EMAIL=support@example.com
+PUBLIC_API_URL=http://localhost:8787
+PUBLIC_SITE_URL=http://localhost:4321
 APP_ENV=development
+```
+
+```env
+# apps/web/.env.production.example（本番ビルド）
+PUBLIC_APP_URL=https://app.example.com
+PUBLIC_API_URL=https://api.example.com
+PUBLIC_SITE_URL=https://example.com
+APP_ENV=production
 ```
 
 ```typescript
@@ -53,19 +64,38 @@ APP_ENV=development
 import.meta.env.PUBLIC_API_URL ?? commonEnvDefaults.PUBLIC_API_URL;
 ```
 
+Workers デプロイ時の本番値は `apps/web/wrangler.jsonc` の `vars` でも上書きできる。
+
 ### apps/lp (Astro + Workers)
 
-web と同様。Astro では `import.meta.env.PUBLIC_*` を使う。
+web と同様。Astro では `import.meta.env.PUBLIC_*` を使う。Astro（Vite）はモード別に env を読み込む。
+
+| Mode        | Template                           | Copy to                    |
+| ----------- | ---------------------------------- | -------------------------- |
+| Development | `apps/lp/.env.development.example` | `apps/lp/.env.development` |
+| Production  | `apps/lp/.env.production.example`  | `apps/lp/.env.production`  |
 
 ```env
-# apps/lp/.env
+# apps/lp/.env.development.example（開発）
 PUBLIC_APP_URL=http://localhost:5173
 PUBLIC_API_URL=http://localhost:8787
+PUBLIC_SITE_URL=http://localhost:4321
+APP_ENV=development
 ```
+
+```env
+# apps/lp/.env.production.example（本番ビルド）
+PUBLIC_APP_URL=https://app.example.com
+PUBLIC_API_URL=https://api.example.com
+PUBLIC_SITE_URL=https://example.com
+APP_ENV=production
+```
+
+Workers デプロイ時の本番値は `apps/lp/wrangler.jsonc` の `vars` でも上書きできる。
 
 ### apps/sp (Expo)
 
-Expo は **`EXPO_PUBLIC_*`** プレフィックスが必要。`@repo/env` のキー名にマッピングする。
+Expo は **`EXPO_PUBLIC_*`** プレフィックスが必要。`@repo/env` のキー名にマッピングする。`NODE_ENV` に応じて `.env.development` / `.env.production` を読み込む。
 
 | Common key             | Expo env var                |
 | ---------------------- | --------------------------- |
@@ -76,10 +106,25 @@ Expo は **`EXPO_PUBLIC_*`** プレフィックスが必要。`@repo/env` のキ
 | `PUBLIC_APP_NAME`      | `EXPO_PUBLIC_APP_NAME`      |
 | `PUBLIC_SUPPORT_EMAIL` | `EXPO_PUBLIC_SUPPORT_EMAIL` |
 
+| Mode        | Template                           | Copy to                    |
+| ----------- | ---------------------------------- | -------------------------- |
+| Development | `apps/sp/.env.development.example` | `apps/sp/.env.development` |
+| Production  | `apps/sp/.env.production.example`  | `apps/sp/.env.production`  |
+
 ```env
-# apps/sp/.env
+# apps/sp/.env.development.example（開発）
+EXPO_PUBLIC_APP_URL=http://localhost:5173
 EXPO_PUBLIC_API_URL=http://localhost:8787
-EXPO_PUBLIC_APP_NAME=My App
+EXPO_PUBLIC_SITE_URL=http://localhost:4321
+EXPO_PUBLIC_APP_ENV=development
+```
+
+```env
+# apps/sp/.env.production.example（本番ビルド）
+EXPO_PUBLIC_APP_URL=https://app.example.com
+EXPO_PUBLIC_API_URL=https://api.example.com
+EXPO_PUBLIC_SITE_URL=https://example.com
+EXPO_PUBLIC_APP_ENV=production
 ```
 
 ```typescript

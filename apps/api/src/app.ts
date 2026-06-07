@@ -5,6 +5,7 @@ import {
   statusResponseSchema,
 } from "@repo/schema";
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 
 const APP_VERSION = "0.0.0";
 
@@ -23,6 +24,14 @@ function resolveEnv(bindings: CloudflareBindings) {
 }
 
 export const app = new Hono<{ Bindings: CloudflareBindings }>();
+
+app.use(
+  "*",
+  cors({
+    origin: (origin) => origin,
+    allowMethods: ["GET", "POST", "OPTIONS"],
+  }),
+);
 
 app.get("/health", (c) => c.json({ ok: true }));
 
