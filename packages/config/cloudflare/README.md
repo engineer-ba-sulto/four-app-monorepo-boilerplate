@@ -14,11 +14,11 @@ Use placeholders until you rename the project:
 
 ## Layout
 
-| App   | Role              | Config              |
-| ----- | ----------------- | ------------------- |
-| `api` | Hono API          | `apps/api/wrangler.jsonc` |
-| `web` | Vite + React SPA  | `apps/web/wrangler.jsonc` |
-| `lp`  | Astro marketing   | `apps/lp/wrangler.jsonc`  |
+| App   | Role             | Config                    |
+| ----- | ---------------- | ------------------------- |
+| `api` | Hono API         | `apps/api/wrangler.jsonc` |
+| `web` | Vite + React SPA | `apps/web/wrangler.jsonc` |
+| `lp`  | Astro marketing  | `apps/lp/wrangler.jsonc`  |
 
 `apps/sp` is not deployed to Workers (Expo / EAS).
 
@@ -30,4 +30,4 @@ Use placeholders until you rename the project:
 
 ## Further reading
 
-Deployment steps and recipes will be documented in `docs/deployment.md` (Phase 5).
+Deployment steps: [docs/deployment.md](../../../docs/deployment.md). Recipes: [docs/recipes/](../../../docs/recipes/).
