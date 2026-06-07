@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@repo/env": "workspace:*",
+    "@repo/schema": "workspace:*",
+    "hono": "4.9.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260603.1",
+    "wrangler": "^4.98.0"
+  }
+}
