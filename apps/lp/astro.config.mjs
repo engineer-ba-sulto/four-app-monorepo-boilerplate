@@ -12,6 +12,7 @@ export default defineConfig({
   adapter: cloudflare(),
   integrations: [react()],
   vite: {
+    envPrefix: ["PUBLIC_", "VITE_"],
     resolve: {
       alias: {
         "@": path.resolve(rootDir, "./src"),

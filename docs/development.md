@@ -31,11 +31,33 @@ bun run dev:sp     # Expo dev server
 bun run dev:lp     # http://localhost:4321
 ```
 
-全 app 並列:
+全 app 一括起動（mprocs で pane 分割 UI、各 app のログを切り替えて確認）:
 
 ```bash
 bun run dev
 ```
+
+[mprocs](https://github.com/pvolok/mprocs) を使う。キーマップはルートの `mprocs.yaml` でカスタムしている。
+
+| キー      | 動作                                      |
+| --------- | ----------------------------------------- |
+| `Tab`     | プロセス一覧 ⇔ 出力ペインのフォーカス切替 |
+| `↑` / `↓` | プロセス選択（`j` / `k` は無効）          |
+| `q`       | 全プロセス停止して終了                    |
+
+その他の操作（`s` 起動、`x` 停止、`r` 再起動、`z` 全画面など）は mprocs デフォルト。一覧は起動中に画面下部のヘルプ、または [mprocs README](https://github.com/pvolok/mprocs#default-keymap) を参照。
+
+| App           | URL                          |
+| ------------- | ---------------------------- |
+| API           | http://localhost:8787/status |
+| Web           | http://localhost:5173/       |
+| LP            | http://localhost:4321/       |
+| SP (Expo web) | http://localhost:8081/       |
+
+| 起動方法        | 向いている用途              |
+| --------------- | --------------------------- |
+| `bun run dev`   | 全 app を mprocs で並列起動 |
+| `bun run dev:*` | 1 app だけ起動              |
 
 ### Per-app commands
 
