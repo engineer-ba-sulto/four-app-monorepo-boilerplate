@@ -1,0 +1,17 @@
+---
+import { getLpEnv } from "@/lib/env";
+
+const env = getLpEnv();
+---
+
+<section class="mx-auto max-w-3xl px-4 py-16 text-center">
+  <p class="text-sm font-medium uppercase tracking-wide text-slate-500">
+    {env.PUBLIC_APP_NAME}
+  </p>
+  <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900">
+    Ship faster with a four-app monorepo
+  </h1>
+  <p class="mt-4 text-lg text-slate-600">
+    API, web app, mobile app, and landing page — wired together from day one.
+  </p>
+</section>

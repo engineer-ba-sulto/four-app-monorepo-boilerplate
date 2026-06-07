@@ -1,0 +1,11 @@
+---
+import { LinkButton } from "@repo/ui";
+
+import { getLpEnv } from "@/lib/env";
+
+const env = getLpEnv();
+---
+
+<section class="mx-auto max-w-3xl px-4 pb-16 text-center">
+  <LinkButton href={env.PUBLIC_APP_URL}>Open Web App</LinkButton>
+</section>

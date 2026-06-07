@@ -1,0 +1,19 @@
+{
+  "extends": "../../packages/config/tsconfig/react.json",
+  "compilerOptions": {
+    "customConditions": ["react-native"],
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/assets/*": ["./assets/*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "../api/worker-configuration.d.ts"
+  ],
+  "exclude": ["node_modules", "android", "ios"]
+}

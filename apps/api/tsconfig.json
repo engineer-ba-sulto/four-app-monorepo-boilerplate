@@ -1,0 +1,5 @@
+{
+  "extends": "../../packages/config/tsconfig/worker.json",
+  "include": ["src/**/*.ts", "worker-configuration.d.ts"],
+  "exclude": ["src/**/*.test.ts"]
+}
