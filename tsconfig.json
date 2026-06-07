@@ -1,4 +1,14 @@
 {
-  "extends": "./tsconfig.base.json",
-  "include": []
+  "files": [],
+  "references": [
+    { "path": "./apps/api" },
+    { "path": "./apps/web" },
+    { "path": "./apps/sp" },
+    { "path": "./apps/lp" },
+    { "path": "./packages/api-client" },
+    { "path": "./packages/env" },
+    { "path": "./packages/schema" },
+    { "path": "./packages/ui" },
+    { "path": "./packages/utils" }
+  ]
 }
