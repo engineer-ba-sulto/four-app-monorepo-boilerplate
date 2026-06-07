@@ -44,10 +44,10 @@ Phase 3（4 app 実装）完了後の **README / docs 整備**。
 
 ## 関連ファイル
 
-| 種別               | パス                                                                                                                                                 |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 実装チェックリスト | [implementation_checklist_v1.md](../../reference/implementation_checklist_v1.md)（Phase 4）                                                          |
-| Cursor 実装指示書  | [four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md](../../four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md) |
+| 種別               | パス                                                                                                                                                           |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 実装チェックリスト | [implementation_checklist_v1.md](../../reference/implementation_checklist_v1.md)（Phase 4）                                                                    |
+| Cursor 実装指示書  | [four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md](../../reference/four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md) |
 
 ## 後続チケット
 

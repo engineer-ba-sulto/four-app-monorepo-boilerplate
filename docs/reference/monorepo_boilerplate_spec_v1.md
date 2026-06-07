@@ -9,7 +9,7 @@
   - `implementation_checklist_v1.md`
   - `app_scaffolding_v1.md`
   - `tooling_tsconfig_biome_v1.md`
-  - `../four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md`
+  - `four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md`
 
 ## Summary
 

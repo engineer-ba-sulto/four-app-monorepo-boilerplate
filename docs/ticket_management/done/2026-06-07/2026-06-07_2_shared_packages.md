@@ -49,12 +49,12 @@ four-app-monorepo-boilerplate の **Phase 2: Shared Packages** を実装する�
 
 ## 関連ファイル
 
-| 種別                       | パス                                                                                                                                                 |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 実装チェックリスト Phase 2 | [implementation_checklist_v1.md](../../reference/implementation_checklist_v1.md)                                                                     |
-| tsconfig / Biome 方針      | [tooling_tsconfig_biome_v1.md](../../reference/tooling_tsconfig_biome_v1.md)                                                                         |
-| モノレポ仕様               | [monorepo_boilerplate_spec_v1.md](../../reference/monorepo_boilerplate_spec_v1.md)                                                                   |
-| Cursor 実装指示書          | [four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md](../../four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md) |
+| 種別                       | パス                                                                                                                                                           |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 実装チェックリスト Phase 2 | [implementation_checklist_v1.md](../../reference/implementation_checklist_v1.md)                                                                               |
+| tsconfig / Biome 方針      | [tooling_tsconfig_biome_v1.md](../../reference/tooling_tsconfig_biome_v1.md)                                                                                   |
+| モノレポ仕様               | [monorepo_boilerplate_spec_v1.md](../../reference/monorepo_boilerplate_spec_v1.md)                                                                             |
+| Cursor 実装指示書          | [four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md](../../reference/four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md) |
 
 ## 後続チケット
 

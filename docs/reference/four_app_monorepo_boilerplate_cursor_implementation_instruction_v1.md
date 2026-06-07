@@ -1,5 +1,15 @@
 # Four App Monorepo Boilerplate Cursor実装指示書 v1
 
+- Date: 2026-06-06
+- Status: Final
+- Location: `docs/reference/four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md`
+- Related:
+  - `monorepo_boilerplate_spec_v1.md`
+  - `directory_structure_v1.md`
+  - `implementation_checklist_v1.md`
+  - `app_scaffolding_v1.md`
+  - `tooling_tsconfig_biome_v1.md`
+
 ## 実装先
 
 `DemoProject/four-app-monorepo-boilerplate/`
@@ -9,7 +19,7 @@
 
 ## 正本ドキュメント
 
-実装時は、次の5ファイルを正本として参照する（プロジェクト内 `docs/reference/` に配置）。
+実装時は、プロジェクト内 `docs/reference/` の次の仕様・設計ドキュメントを正本として参照する。
 
 - `docs/reference/monorepo_boilerplate_spec_v1.md`
 - `docs/reference/directory_structure_v1.md`
@@ -17,9 +27,9 @@
 - `docs/reference/app_scaffolding_v1.md`
 - `docs/reference/tooling_tsconfig_biome_v1.md`
 
-Biome 導入の手順は `.cursor/skills/bun-biome-setup/SKILL.md` を参照する（方針は `tooling_tsconfig_biome_v1.md` を優先）。
+Biome 導入の手順は `.cursor/skills/bun-biome-setup/SKILL.md` を参照する（方針は `docs/reference/tooling_tsconfig_biome_v1.md` を優先）。
 
-本指示書は、上記をCursor実装用にまとめたもの。詳細判断で迷った場合は、正本ドキュメントを優先する。
+本指示書（`docs/reference/four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md`）は、上記を Cursor 実装用にまとめたもの。詳細判断で迷った場合は、仕様・設計ドキュメントを優先する。
 
 ## 実装ゴール
 
@@ -94,6 +104,13 @@ DemoProject/four-app-monorepo-boilerplate/
 │   ├── utils/
 │   └── ui/
 ├── docs/
+│   ├── reference/
+│   │   ├── monorepo_boilerplate_spec_v1.md
+│   │   ├── directory_structure_v1.md
+│   │   ├── implementation_checklist_v1.md
+│   │   ├── app_scaffolding_v1.md
+│   │   ├── tooling_tsconfig_biome_v1.md
+│   │   └── four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md
 │   ├── architecture.md
 │   ├── env.md
 │   ├── development.md
@@ -300,6 +317,13 @@ docs:
 
 ```txt
 docs/
+├── reference/
+│   ├── monorepo_boilerplate_spec_v1.md
+│   ├── directory_structure_v1.md
+│   ├── implementation_checklist_v1.md
+│   ├── app_scaffolding_v1.md
+│   ├── tooling_tsconfig_biome_v1.md
+│   └── four_app_monorepo_boilerplate_cursor_implementation_instruction_v1.md
 ├── architecture.md
 ├── env.md
 ├── development.md
