@@ -3,6 +3,7 @@
 - Date: 2026-06-06
 - Status: Final
 - Related spec: `monorepo_boilerplate_spec_v1.md`
+- App scaffolding: `app_scaffolding_v1.md`
 - Boilerplate name: `four-app-monorepo-boilerplate`
 - Intended implementation directory: `DemoProject/four-app-monorepo-boilerplate/`
 

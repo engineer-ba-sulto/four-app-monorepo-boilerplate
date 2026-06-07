@@ -9,11 +9,12 @@
 
 ## 正本ドキュメント
 
-実装時は、次の3ファイルを正本として参照する（プロジェクト内 `docs/reference/` に配置）。
+実装時は、次の4ファイルを正本として参照する（プロジェクト内 `docs/reference/` に配置）。
 
 - `docs/reference/monorepo_boilerplate_spec_v1.md`
 - `docs/reference/directory_structure_v1.md`
 - `docs/reference/implementation_checklist_v1.md`
+- `docs/reference/app_scaffolding_v1.md`
 
 本指示書は、上記3ファイルをCursor実装用にまとめたもの。詳細判断で迷った場合は、正本ドキュメントを優先する。
 
@@ -233,6 +234,8 @@ Biomeはroot `biome.json` に置く。Tailwindは `apps/web`, `apps/lp`, `packag
 `Input`, `Dialog`, `Toast`, `Tabs` などは初期coreに入れない。
 
 ## Apps
+
+各 app の create コマンド・C3 テンプレート選択・作成後の調整は `docs/reference/app_scaffolding_v1.md` を正本とする。
 
 ### apps/api
 

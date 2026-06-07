@@ -109,6 +109,8 @@
 
 ## Phase 3: Apps
 
+App の土台作成は `app_scaffolding_v1.md` に従う（create コマンド・C3 選択・作成後調整）。
+
 ### apps/api
 
 - [ ] Create `apps/api/package.json`.
