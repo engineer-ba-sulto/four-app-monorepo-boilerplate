@@ -16,6 +16,7 @@
     "@expo/ui": "~56.0.16",
     "@repo/api-client": "workspace:*",
     "@repo/env": "workspace:*",
+    "@repo/schema": "workspace:*",
     "api": "workspace:*",
     "expo": "~56.0.9",
     "expo-constants": "~56.0.17",
