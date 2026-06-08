@@ -14,6 +14,7 @@
   "dependencies": {
     "@repo/api-client": "workspace:*",
     "@repo/env": "workspace:*",
+    "@repo/schema": "workspace:*",
     "@repo/ui": "workspace:*",
     "@tanstack/react-router": "^1.114.3",
     "api": "workspace:*",
@@ -21,15 +22,16 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260603.1",
     "@cloudflare/vite-plugin": "^1.40.0",
     "@tailwindcss/vite": "^4.1.11",
     "@types/node": "^25.9.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
+    "@vitejs/plugin-react": "^5.1.0",
     "tailwindcss": "^4.1.11",
     "typescript": "~6.0.2",
-    "vite": "^8.0.12",
+    "vite": "^7.3.2",
     "wrangler": "^4.98.0"
   }
 }
