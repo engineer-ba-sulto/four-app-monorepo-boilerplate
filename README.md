@@ -42,6 +42,9 @@
 **前提:** [Bun](https://bun.com) 1.3+
 
 ```bash
+# コピー直後（任意）: プロジェクト slug を変更
+bun run init:project my-cool-app
+
 # 依存関係インストール
 bun install
 

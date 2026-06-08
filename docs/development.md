@@ -10,7 +10,16 @@
 
 ## First-time setup
 
+リポジトリをコピーした直後に、プロジェクト slug（リポジトリ名・Worker 名の接頭辞）を変える場合:
+
+`init:project` は次を更新する:
+
+- ルート `package.json` の `name`
+- `apps/api` / `apps/web` / `apps/lp` の `wrangler.jsonc` の Worker `name`（`<slug>-api` など）
+- `README.md` のタイトル
+
 ```bash
+bun run init:project my-cool-app   # コピー直後のみ（任意）
 bun install
 bun run typecheck
 bun run check
