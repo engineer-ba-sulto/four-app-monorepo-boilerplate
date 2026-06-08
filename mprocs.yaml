@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/pvolok/mprocs/master/schemas/mprocs.json
+
+proc_list_title: four-app-monorepo
+
+procs:
+  api:
+    cmd: ["bun", "run", "dev"]
+    cwd: <CONFIG_DIR>/apps/api
+    stop: SIGINT
+  web:
+    cmd: ["bun", "run", "dev"]
+    cwd: <CONFIG_DIR>/apps/web
+    stop: SIGINT
+  lp:
+    cmd: ["bun", "run", "dev"]
+    cwd: <CONFIG_DIR>/apps/lp
+    stop: SIGINT
+  sp:
+    cmd: ["bun", "run", "dev"]
+    cwd: <CONFIG_DIR>/apps/sp
+    stop: SIGINT
+
+keymap_procs: # keymap when process list is focused
+  <Tab>: { c: toggle-focus }
+  <j>: null
+  <k>: null
+
+keymap_term: # keymap when process list is focused
+  <Tab>: { c: toggle-focus }

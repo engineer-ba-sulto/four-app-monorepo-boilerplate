@@ -1,0 +1,18 @@
+{
+  "extends": "../../packages/config/tsconfig/react.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "worker/**/*.ts",
+    "worker-configuration.d.ts",
+    "vite.config.ts",
+    "../api/worker-configuration.d.ts"
+  ],
+  "exclude": ["src/**/*.test.ts"],
+  "compilerOptions": {
+    "types": ["vite/client", "@cloudflare/workers-types"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
