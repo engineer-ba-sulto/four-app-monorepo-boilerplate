@@ -15,6 +15,9 @@
 `init:project` は次を更新する:
 
 - ルート `package.json` の `name`
+- `apps/*/package.json` の `name`（`api` / `web` / `lp` は `<slug>-<app>`、`sp` は `<slug>`。各 `dev:*` は path filter に切り替え）
+- workspace 依存（例: `web` / `sp` の `api`）と `api/app` import の追従
+- `apps/sp/app.json` の Expo `slug` / `name` / `scheme`
 - `apps/api` / `apps/web` / `apps/lp` の `wrangler.jsonc` の Worker `name`（`<slug>-api` など）
 - `README.md` のタイトル
 
