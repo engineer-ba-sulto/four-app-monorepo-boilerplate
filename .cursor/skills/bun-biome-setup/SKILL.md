@@ -7,8 +7,6 @@ description: Introduces Biome with Bun (bun add, bun run, bunx) — biome.json, 
 
 Bun プロジェクトに Biome を導入する手順。次のどちらにも対応する。
 
-**four-app-monorepo-boilerplate** では、方針・tsconfig との関係の正本は `docs/reference/tooling_tsconfig_biome_v1.md`。本スキルは Biome 導入の手順正本とする。
-
 | 種別             | 例                                             | 備考                                            |
 | ---------------- | ---------------------------------------------- | ----------------------------------------------- |
 | **Bun モノレポ** | ルート `workspaces` + `apps/*`（Astro LP 等）  | Biome はルート 1 本のみ                         |
